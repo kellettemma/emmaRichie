@@ -184,6 +184,19 @@ select:focus {
     border-color: rgb(124, 144, 158);
 }
 
+.button:focus,
+.button:hover,
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-color: rgb(73, 82, 90);
+}
+
 footer {
     color: white;
     background-color: rgb(124, 144, 158);
