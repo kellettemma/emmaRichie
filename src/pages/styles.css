@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css');
+
+
+body,
+html {
+    color: rgb(124, 144, 158);
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+
+a,
+body {
+    color: #7c909e;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0px 0px 1.5rem;
+}
+
+h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 1rem 0px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.masthead {
+    background-size: contain;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.masthead-mobile {
+    object-fit: contain;
+    width: 100%;
+}
+
+.masthead img {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 2s ease-in 0s 1 normal none running fadeIn;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.sub-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 2s ease-in 0s 1 normal none running fadeIn;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.fadeIn {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 2s ease-in 0s 1 normal none running fadeIn;
+}
+
+form {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#rsvp {
+    margin-top: 2rem;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: rgb(124, 144, 158);
+    border-color: rgb(124, 144, 158);
+}
+
+label {
+    color: rgb(232, 241, 248);
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
+select {
+    background-color: rgb(232, 241, 248);
+    color: rgb(96, 108, 118);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: rgb(232, 241, 248);
+}
+
+input[type="submit"] {
+    background-color: rgb(96, 108, 118);
+    color: white;
+    border-color: rgb(96, 108, 118);
+}
+
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input:not([type]):focus,
+textarea:focus,
+select:focus {
+    border-color: rgb(124, 144, 158);
+}
+
+.button:focus,
+.button:hover,
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-color: rgb(73, 82, 90);
+}
+
+footer {
+    color: white;
+    background-color: rgb(124, 144, 158);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.blue {
+    background-color: rgb(232, 241, 248);
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: 2rem;
+}
+
+
+/* ENVELOPE INVITATION */
+
+.letter-image {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.animated-mail {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    transition: all 0.4s ease 0s;
+}
+
+.animated-mail .back-fold {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 100px;
+    z-index: 0;
+    background: rgb(124, 144, 158);
+}
+
+.animated-mail .letter {
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    height: 60px;
+    z-index: 1;
+    width: 100% !important;
+    background: white;
+    overflow: hidden;
+    transition: all 0.4s ease 0.2s;
+}
+
+.animated-mail .top-fold {
+    position: absolute;
+    top: 50px;
+    width: 0px;
+    height: 0px;
+    transform-origin: 50% 0%;
+    z-index: 2;
+    border-style: solid;
+    border-width: 50px 100px 0px;
+    transition: transform 0.4s ease 0.4s, z-index 0.2s ease 0.4s;
+    border-color: rgb(64, 95, 117) transparent transparent;
+}
+
+.animated-mail .body {
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    z-index: 2;
+    border-style: solid;
+    border-width: 0px 0px 100px 200px;
+    border-color: transparent transparent rgb(124, 144, 158);
+}
+
+.animated-mail .left-fold {
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    z-index: 2;
+    border-style: solid;
+    border-width: 50px 0px 50px 100px;
+    border-color: transparent transparent transparent rgb(124, 144, 158);
+}
+
+.letter-image:hover .animated-mail {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+}
+
+.letter-image:hover .animated-mail .top-fold {
+    transition: transform 0.4s, z-index 0.2s;
+    transform: rotateX(180deg);
+    -webkit-transition: transform 0.4s, z-index 0.2s;
+    -webkit-transform: rotateX(180deg);
+    -moz-transition: transform 0.4s, z-index 0.2s;
+    -moz-transform: rotateX(180deg);
+    z-index: 0;
+}
+
+.letter-image:hover .animated-mail .letter {
+    height: 320px;
+    content: 'ram avtar';
+    color: #000;
+}
+
+.letter-image:hover .shadow {
+    width: 250px;
+}
+
+/* PARALLAX SCROLLING */
+.parallax__img {
+    background-image: url('../../public/images/Interiors-Conservatory.jpeg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+}
+
+.parallax__img--2 {
+    background-image: url('../../public/images/Grounds-Boathouse.jpeg');
+}
+
+@media only screen and (min-width: 1024px) {
+    .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .masthead h1 img {
+        width: 400px;
+    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .masthead-mobile {
+        width: 55%;
+    }
+
+    .details {
+        width: 30%;
+    }
+
+    .blue {
+        width: 100%;
+    }
+
+    .flex {
+        align-items: baseline;
+        padding: 2rem 10%;
+    }
+
+    .column:first-of-type {
+        margin-right: 5%;
+    }
+
+    .column {
+        width: 30%;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
