@@ -7,7 +7,7 @@ export const IndexPage = () => {
     <main>
       <div class="masthead">
         <div class="details">
-          <h1><img src="./images/emma-richie.png" alt="Emma and Richard" /></h1>
+          <h1><img src="./images/title.png" alt="Emma and Richard" /></h1>
           <p class="sub-heading">Together with Isabelle and their families</p>
           <p class="sub-heading">invite you to share in their wedding celebration</p>
           <p class="sub-heading">SUNDAY, the 30th of JUNE 2024 <br />at 2:30pm at Castle Leslie Glaslough, Co. Monaghan</p>
@@ -22,7 +22,7 @@ export const IndexPage = () => {
           </div>
           <a class="button fadeIn" href="#rsvp">RSVP</a>
         </div>
-        <img src="./images/castle.png" alt="castle leslie" class="masthead-mobile" />
+        <img src="./images/bg.png" alt="castle leslie" class="masthead-mobile" />
       </div>
       <div class="parallax__img"></div>
       <section>
@@ -71,8 +71,7 @@ export const IndexPage = () => {
                 <textarea name="diet" id="diet"></textarea>
                 <label for="song">What song will get you on the dancefloor?</label>
                 <textarea name="song" id="song"></textarea>
-                <label for="message">Questions or Comments</label>
-                <textarea name="message" id="message"></textarea>
+               
               </div>
               <div class="column">
                 <label for="plus">Are you bringing a guest?</label
@@ -91,6 +90,8 @@ export const IndexPage = () => {
                 </select>
                 <label for="guest-diet">Do they have any special dietiary requirements?</label>
                 <textarea name="guest-diet" id="guest-diet"></textarea>
+                <label for="message">Questions or Comments</label>
+                <textarea name="message" id="message"></textarea>
               </div>
               <input type="hidden" name="_subject" id="email-subject" value="RSVP" />
             </fieldset>
