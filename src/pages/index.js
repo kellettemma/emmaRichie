@@ -2,7 +2,7 @@ import * as React from "react"
 import "./styles.css" 
 
 
-const IndexPage = () => {
+export const IndexPage = () => {
   return (
     <main>
       <div class="masthead">
@@ -61,7 +61,7 @@ const IndexPage = () => {
                   <option value="Yes">Gladly accepts</option>
                   <option value="No">Regretfully declines</option>
                 </select>
-                <label for="main">What main course?</label>
+                <label for="main">Meal Preference?</label>
                 <select name="main" id="main">
                   <option value="">Select</option>
                   <option value="beef">Traditional Beef Wellington, Roscoff Onion, Fondant Potato, Heritage Carrot &amp; Vegetable Parcel, Madeira Jus</option>
@@ -69,7 +69,7 @@ const IndexPage = () => {
                 </select>
                 <label for="diet">Do you have any special dietiary requirements?</label>
                 <textarea name="diet" id="diet"></textarea>
-                <label for="song">Any special song requests?</label>
+                <label for="song">What song will get you on the dancefloor?</label>
                 <textarea name="song" id="song"></textarea>
                 <label for="message">Questions or Comments</label>
                 <textarea name="message" id="message"></textarea>
@@ -83,7 +83,7 @@ const IndexPage = () => {
                 </select>
                 <label for="guest-full-name">Guest Full Name</label>
                 <input type="text" name="guest-full-name" id="guest-full-name" placeholder="First and Last" />
-                <label for="guest-main">What main course?</label>
+                <label for="guest-main">Guest Meal Preference?</label>
                 <select name="guest-main" id="guest-main">
                   <option value="">Select</option>
                   <option value="beef">Traditional Beef Wellington, Roscoff Onion, Fondant Potato, Heritage Carrot &amp; Vegetable Parcel, Madeira Jus</option>
@@ -91,12 +91,6 @@ const IndexPage = () => {
                 </select>
                 <label for="guest-diet">Do they have any special dietiary requirements?</label>
                 <textarea name="guest-diet" id="guest-diet"></textarea>
-                <label for="accommodation">Would you like to reserve a room?</label>
-                <select name="accommodation" id="accommodation"
-                ><option value="">Select</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
               </div>
               <input type="hidden" name="_subject" id="email-subject" value="RSVP" />
             </fieldset>
